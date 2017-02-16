@@ -10,14 +10,21 @@
   <link rel="stylesheet" href="css/main.css" type="text/css">
   </head>
   <body>
-  <input type="file" id="uploadedFile">
-  <input type="number" id="rowSelector" placeholder="1"><br>
-  <button type="button" id="printFile"> Print Selected Row</button>
-  <div id="printArea"></div>
-  <footer>
+  <div class="container-fluid">
+    <h1 class="text-center"> dEntry </h1>
+      <div class="input-group center-block">
+      <form class="center-block">
+        <input type="file" id="uploadedFile" class="btn center-block">
+        <input type="number" id="rowSelector" placeholder="1" class="center-block"><br>
+      </form>
+      </div>
+    <button type="button" class="btn center-block" id="printFile"> Print Selected Row</button>
+    <div id="printArea"></div>
+  </div>
+  <foot>
 	<script src="scripts/jquery-3.1.1.min.js" type="text/javascript"></script>	
   <script src="scripts/bootstrap.min.js" type="text/javascript"></script>
   <script src="scripts/main.js" type="text/javascript"></script>
-  </footer>
+  </foot>
   </body>
 </html>

@@ -36,18 +36,18 @@ $("#printFile").on("click", function(){
       const headers = Object.keys(currentObj[0]);
       $("#printArea").empty()
       headers.map(function(e,i){
-        $("#printArea").append("<br><p id='header"+i+"'>"+e+"</p>")
+        $("#printArea").append("<br><p class='text-center' id='header"+i+"'>"+e+"</p>")
       });
       headers.map(function(e,i){
         let label=i+1;
-        $("#header"+i).append("<br><label for='column"+label+"'>#"+label+"</label><input readonly class='selectBox' type='text' id='column"+i+"'value='"+currentObj[selectedRow][e]+"'>")
+        $("#header"+i).append("<br><label for='column"+label+"'>#"+label+"</label><input readonly class='center-block form-control' type='text' id='column"+i+"'value='"+currentObj[selectedRow][e]+"'>")
       });
       headers.map(function(e,i){
         headersSelectors[i+1]=e;
         console.log(headersSelectors);
       });
     }
-  }
+  }1
 });
 function doc_keyUp(e){
 //  if(e.shiftKey)
